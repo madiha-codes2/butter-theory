@@ -1,0 +1,6 @@
+{
+  "name": "BUTTER THEORY",
+  "description": "Independent online bakery and cloud kitchen delivering small-batch pastries, cookies, brownies, drinks, and custom treat boxes.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

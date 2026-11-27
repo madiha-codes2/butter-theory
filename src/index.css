@@ -1,0 +1,151 @@
+@import "tailwindcss";
+
+:root {
+  --bt-cream: #F5E9C9;
+  --bt-cream-light: #FAF3DF;
+  --bt-yellow: #F2C94C;
+  --bt-red: #C83F35;
+  --bt-cobalt: #3556A5;
+  --bt-pink: #E8AFC0;
+  --bt-brown: #593B30;
+  --bt-ink: #3B241C;
+}
+
+@layer base {
+  html {
+    background-color: var(--bt-cream);
+    color: var(--bt-brown);
+    font-family: "DM Sans", system-ui, -apple-system, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--bt-cream);
+    color: var(--bt-brown);
+    -webkit-font-smoothing: antialiased;
+    overflow-x: clip;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: "Fraunces", Georgia, serif;
+    text-wrap: balance;
+  }
+
+  .font-hand {
+    font-family: "Caveat", cursive;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.bt-checker {
+  background-image:
+    linear-gradient(45deg, #593B30 25%, transparent 25%),
+    linear-gradient(-45deg, #593B30 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #593B30 75%),
+    linear-gradient(-45deg, transparent 75%, #593B30 75%);
+  background-size: 16px 16px;
+  background-position: 0 0, 0 8px, 8px -8px, -8px 0;
+}
+
+.bt-checker-cobalt {
+  background-image:
+    linear-gradient(45deg, #3556A5 25%, #F5E9C9 25%),
+    linear-gradient(-45deg, #3556A5 25%, #F5E9C9 25%),
+    linear-gradient(45deg, #F5E9C9 75%, #3556A5 75%),
+    linear-gradient(-45deg, #F5E9C9 75%, #3556A5 75%);
+  background-size: 16px 16px;
+  background-position: 0 0, 0 8px, 8px -8px, -8px 0;
+}
+
+.bt-checker-red {
+  background-image:
+    linear-gradient(45deg, #C83F35 25%, #F2C94C 25%),
+    linear-gradient(-45deg, #C83F35 25%, #F2C94C 25%),
+    linear-gradient(45deg, #F2C94C 75%, #C83F35 75%),
+    linear-gradient(-45deg, #F2C94C 75%, #C83F35 75%);
+  background-size: 16px 16px;
+  background-position: 0 0, 0 8px, 8px -8px, -8px 0;
+}
+
+@keyframes bt-marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@keyframes bt-marquee-reverse {
+  0% {
+    transform: translate3d(-50%, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes bt-spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes bt-float {
+  0%, 100% {
+    transform: translate3d(0, 0, 0) rotate(-2deg);
+  }
+  50% {
+    transform: translate3d(0, -8px, 0) rotate(2deg);
+  }
+}
+
+.bt-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: bt-marquee 30s linear infinite;
+}
+
+.bt-marquee-track-reverse {
+  display: flex;
+  width: max-content;
+  animation: bt-marquee-reverse 34s linear infinite;
+}
+
+.bt-marquee-track:hover,
+.bt-marquee-track-reverse:hover {
+  animation-play-state: paused;
+}
+
+.bt-spin-slow {
+  animation: bt-spin-slow 26s linear infinite;
+}
+
+.bt-float {
+  animation: bt-float 5.5s ease-in-out infinite;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bt-marquee-track,
+  .bt-marquee-track-reverse,
+  .bt-spin-slow,
+  .bt-float {
+    animation: none;
+  }
+}

@@ -1,0 +1,15 @@
+# Dependencies & build output
+node_modules/
+dist/
+coverage/
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Editor & OS files
+.DS_Store
+Thumbs.db
+*.log
+.aistudio/
