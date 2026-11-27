@@ -10,7 +10,7 @@ The platform features a distinctive visual identity with warm butter-inspired co
 
 ---
 
-## 📖 About the Project
+## About the Project
 
 BUTTER THEORY was developed as a customer-facing digital storefront for a fictional premium bakery and cloud kitchen.
 
@@ -20,7 +20,7 @@ A key feature of the application is **Build Your Own Box**, which allows custome
 
 The application handles its core interactions and business logic directly in the browser, using React state and Local Storage for persistence.
 
-## ✨ Key Features & Functionality
+## Key Features & Functionality
 
 ### 1. Product Catalogue
 
@@ -79,7 +79,7 @@ An interactive customization feature that allows customers to create their own a
 
 ---
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 The project is built using modern frontend technologies and libraries.
 
@@ -141,7 +141,7 @@ Tailwind CSS is used to create responsive layouts and maintain consistent stylin
 
 ---
 
-## 🧰 Tools & Development Environment
+## Tools & Development Environment
 
 - **Visual Studio Code** – Code editing and local development.
 - **Node.js** – JavaScript runtime environment.
@@ -151,7 +151,7 @@ Tailwind CSS is used to create responsive layouts and maintain consistent stylin
 
 ---
 
-## 🎨 Design Philosophy & Brand Identity
+## Design Philosophy & Brand Identity
 
 The visual direction of BUTTER THEORY combines a premium bakery aesthetic with a playful, contemporary editorial style.
 
@@ -168,14 +168,20 @@ The objective is to create a recognizable bakery brand identity while keeping th
 
 ---
 
-## 👩‍💻 Author
+## Live Demo
+
+Explore BUTTER THEORY: https://butter-theory.netlify.app/
+
+---
+
+## Author
 **Madiha S.**
 
 Aspiring AI/ML Engineer | Interested in Frontend Development, Python Backend Development, and Software Development.
 
 ---
 
-## 📄 License
+## License
 
 This project is developed for portfolio and educational purposes. Please check the repository's licensing and third-party asset attributions before reusing any part of the project.
 
